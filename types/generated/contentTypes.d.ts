@@ -502,9 +502,8 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       'api::article.article'
     >;
     publishedAt: Schema.Attribute.DateTime;
-    Slug: Schema.Attribute.String &
+    Slug: Schema.Attribute.UID<'Title'> &
       Schema.Attribute.Required &
-      Schema.Attribute.Unique &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
