@@ -23,6 +23,16 @@
         }
       }
     },
+    "Slug": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false,
+      "unique": true
+    },
     "articles": {
       "type": "relation",
       "relation": "manyToMany",
